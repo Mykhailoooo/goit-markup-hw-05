@@ -453,7 +453,7 @@ img {
 }
 
 .footer-block {
-  display: block;
+  display: flex;
   align-items: baseline;
 }
 
