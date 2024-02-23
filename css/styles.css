@@ -537,44 +537,6 @@ img {
   pointer-events: auto;
 }
 
-.backdrop-button {
-  position: absolute;
-  background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #e7e9fc;
-  cursor: pointer;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  border: none;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  cursor: pointer;
-  min-width: 169px;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop-button:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
-
-.backdrop-button:focus {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
-
 .modal {
   width: 408px;
   min-height: 584px;
@@ -595,13 +557,30 @@ img {
   height: 24px;
   fill: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
   border-radius: 50%;
   float: right;
+  padding: 0;
+  cursor: pointer;
   top: 24px;
   right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 
 .modal-title {
