@@ -553,6 +553,7 @@ img {
 }
 
 .modal-close {
+  position: absolute;
   width: 24px;
   height: 24px;
   fill: #e7e9fc;
@@ -605,6 +606,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  line-height: 1.17;
 }
 
 .modal-input:focus {
